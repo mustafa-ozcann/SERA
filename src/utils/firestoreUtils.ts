@@ -62,7 +62,7 @@ export const updateChecklistItem = async (
     console.error('Firestore update error:', error);
     throw new Error('Güncelleme başarısız');
   }
-};
+  };
 
 // Üretim Alanı CRUD Functions
 export const saveUretimAlani = async (uretimAlani: Omit<UretimAlani, 'id' | 'createdAt' | 'updatedAt'>): Promise<string> => {
